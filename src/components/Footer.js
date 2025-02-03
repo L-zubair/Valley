@@ -64,7 +64,7 @@ const Footer = () => {
             <p>Social Media</p>
             <div className="flex gap-2 mt-2">
               {['facebook', 'instagram', 'twitter', 'linkedin', 'youtube'].map(platform => (
-                <a key={platform} href="" aria-label={platform} className="w-9 h-9 flex items-center justify-center bg-white text-gray-900 rounded-full hover:bg-gray-900 hover:text-white">
+                <a key={platform} href="https://lonetech.framer.website/" aria-label={platform} className="w-9 h-9 flex items-center justify-center bg-white text-gray-900 rounded-full hover:bg-gray-900 hover:text-white">
                   <i className={`fab fa-${platform}`}></i>
                 </a>
               ))}
