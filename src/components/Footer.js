@@ -54,7 +54,7 @@ const Footer = () => {
         
         {/* Newsletter & Social Media */}
         <div>
-          <h3 className="text-lg font-bold mb-2">Subscribe to Our Newsletter</h3>
+          <h3 className="text-lg font-bold mb-2">Subscribe to Our Newslettr</h3>
           <form className="flex gap-2 mt-2">
             <input type="email" placeholder="Email" className="flex-1 p-2 border border-gray-300 rounded" />
             <button type="submit" className="p-2 bg-gray-900 text-white rounded hover:bg-gray-700">Submit</button>
@@ -64,7 +64,7 @@ const Footer = () => {
             <p>Social Media</p>
             <div className="flex gap-2 mt-2">
               {['facebook', 'instagram', 'twitter', 'linkedin', 'youtube'].map(platform => (
-                <a key={platform} href="#" aria-label={platform} className="w-9 h-9 flex items-center justify-center bg-white text-gray-900 rounded-full hover:bg-gray-900 hover:text-white">
+                <a key={platform} href="" aria-label={platform} className="w-9 h-9 flex items-center justify-center bg-white text-gray-900 rounded-full hover:bg-gray-900 hover:text-white">
                   <i className={`fab fa-${platform}`}></i>
                 </a>
               ))}

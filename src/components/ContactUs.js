@@ -54,7 +54,7 @@ const ContactUs = () => {
           <p>Street, 51</p>
           <p>100 00 Prague</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7373501542565!2d75.01460057517694!3d34.05060791781755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e227446c3079df%3A0x2b95fb1abed1c754!2sValley%20Cement%20Industries!5e0!3m2!1sen!2sin!4v1737305349859!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe  title="Google Maps Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7373501542565!2d75.01460057517694!3d34.05060791781755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e227446c3079df%3A0x2b95fb1abed1c754!2sValley%20Cement%20Industries!5e0!3m2!1sen!2sin!4v1737305349859!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     <Footer/>
