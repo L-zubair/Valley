@@ -1,0 +1,179 @@
+/* General Navbar Styles */
+.navbar {
+  background-color: #f8c102;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  padding-right: 2px;
+}
+
+.toggle-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  transition: all 0.3s ease;
+  right: 2px;
+}
+
+.toggle-icon::before {
+  top: -8px;
+}
+
+.toggle-icon::after {
+  top: 8px;
+}
+
+.menu-toggle .toggle-icon.close {
+  background-color: transparent;
+}
+
+.menu-toggle .toggle-icon.close::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle .toggle-icon.close::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8c102;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  background-color: #f39c12;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-links {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-links:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .nav-menu {
+      display: none;
+  }
+
+  .nav-menu.active {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .dropdown-menu {
+      position: static;
+      background-color: #f9f9f9;
+      margin: 10px 0;
+  }
+
+  .dropdown-links {
+      padding: 10px 20px;
+  }
+}
